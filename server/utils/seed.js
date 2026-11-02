@@ -1,5 +1,11 @@
 require('dotenv').config({ path: require('path').resolve(__dirname, '../.env') });
+const dns = require('dns');
 const mongoose = require('mongoose');
+
+// Use reliable public DNS to prevent querySrv ECONNREFUSED
+try {
+  dns.setServers(['8.8.8.8', '1.1.1.1']);
+} catch (e) {}
 const User = require('../models/User');
 const Company = require('../models/Company');
 const Lead = require('../models/Lead');
