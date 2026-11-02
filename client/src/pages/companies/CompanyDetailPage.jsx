@@ -200,3 +200,4 @@ const CompanyDetailPage = () => {
 };
 
 export default CompanyDetailPage;
+

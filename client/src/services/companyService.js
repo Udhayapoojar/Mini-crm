@@ -19,3 +19,4 @@ export const updateCompany = async (id, companyData) => {
   const response = await api.put(`/companies/${id}`, companyData);
   return response.data;
 };
+

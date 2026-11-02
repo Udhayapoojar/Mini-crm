@@ -170,3 +170,4 @@ const Sidebar = ({ mobileOpen, onMobileClose }) => {
 
 export default Sidebar;
 export { DRAWER_WIDTH };
+

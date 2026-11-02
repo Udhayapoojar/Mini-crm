@@ -9,6 +9,7 @@ import {
   Grid,
   Alert,
   CircularProgress,
+  Box
 } from '@mui/material';
 import { createCompany, updateCompany } from '../../services/companyService';
 
@@ -174,3 +175,4 @@ const CompanyFormDialog = ({ open, onClose, company, onSuccess }) => {
 };
 
 export default CompanyFormDialog;
+

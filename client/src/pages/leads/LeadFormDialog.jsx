@@ -10,6 +10,7 @@ import {
   Grid,
   Alert,
   CircularProgress,
+  Box
 } from '@mui/material';
 import { getUsers } from '../../services/userService';
 import { getCompanies } from '../../services/companyService';
@@ -89,7 +90,7 @@ const LeadFormDialog = ({ open, onClose, lead, onSuccess }) => {
   const validate = () => {
     if (!formData.name.trim()) return 'Lead name is required.';
     if (!formData.email.trim()) return 'Email is required.';
-    const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email.trim())) return 'Please provide a valid email.';
     if (!formData.phone.trim()) return 'Phone number is required.';
     if (!formData.assignedTo) return 'Please select an assigned user.';
@@ -268,3 +269,4 @@ const LeadFormDialog = ({ open, onClose, lead, onSuccess }) => {
 };
 
 export default LeadFormDialog;
+

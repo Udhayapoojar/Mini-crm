@@ -19,3 +19,4 @@ export const updateTaskStatus = async (id, status) => {
   const response = await api.patch(`/tasks/${id}/status`, { status });
   return response.data;
 };
+

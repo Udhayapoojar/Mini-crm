@@ -33,3 +33,4 @@ const StatusChip = ({ status, size = 'small' }) => {
 };
 
 export default StatusChip;
+

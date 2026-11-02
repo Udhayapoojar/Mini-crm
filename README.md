@@ -379,3 +379,4 @@ This verifies:
 
 ---
 *Mini CRM Business Operations Platform — Built with clean architecture, strict authorization, and attention to real-world software engineering principles.*
+

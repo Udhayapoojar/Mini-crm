@@ -48,3 +48,4 @@ const StatCard = ({ title, value, icon: Icon, color = '#1e3a8a', subtitle }) => 
 };
 
 export default StatCard;
+

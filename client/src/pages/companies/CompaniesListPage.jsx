@@ -209,3 +209,4 @@ const CompaniesListPage = () => {
 };
 
 export default CompaniesListPage;
+
